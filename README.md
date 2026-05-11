@@ -15,10 +15,9 @@
 ## Architecture
 
 <p align="center">
-  <img src="architecture_figure.png" alt=" Architecture" width="850">
+  <img src="Figure.png" alt=" Architecture" width="850">
 </p>
 
-*Overview of our framework.*
 ```
 Individual Planning  →  P2P Negotiation Loop  →  Human Query (필요시)  →  Final Plan
 ```
