@@ -1,11 +1,4 @@
 # phases.py
-#
-# PASS/INFORM 방식 복원. 핵심 수정사항:
-#   - can_provide를 물리적 아이템만으로 제한 (Phase 1 프롬프트)
-#   - _ensure_pass_steps: offer 매칭으로 PASS 누락 시 코드가 보완
-#   - _auto_add_receivers: PASS에 대응하는 receive step 자동 삽입
-#   - _normalize_pass: 비정상 PASS 제거 (공간/상태, 중복, target없음)
-#   - format_joint_plan: 깔끔한 자연어 출력
 
 from __future__ import annotations
 
