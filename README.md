@@ -143,9 +143,13 @@ p2p-planning/
 ## 참고문헌
 
 [1] Zhang, H. et al., *Building Cooperative Embodied Agents Modularly with Large Language Models*, ICLR, 2024.
+
 [2] Brienza, M. et al., *Multi-agent Planning using Visual Language Models*, arXiv, 2024.
+
 [3] Mandi, Z. et al., *RoCo: Dialectic Multi-Robot Collaboration with Large Language Models*, arXiv, 2023.
+
 [4] Kolve, E. et al., *AI2-THOR: An Interactive 3D Environment for Visual AI*, arXiv, 2017.
+
 [5] https://github.com/AMI-Collaboration/p2p-planning, 2026.
 
 ---
