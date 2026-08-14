@@ -53,6 +53,7 @@ def _load_qwen():
     from transformers import (
         AutoProcessor,
         Qwen2_5_VLForConditionalGeneration,
+        BitsAndBytesConfig
     )
 
     # ============================================================
@@ -66,11 +67,19 @@ def _load_qwen():
         if torch.cuda.is_available()
         else torch.float32
     )
-
+    
+    quantization_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_compute_dtype=dtype,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type="nf4"
+    )
+    
     _qwen_model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         MODEL_ID,
         torch_dtype=dtype,
         device_map="auto",
+        quantization_config=quantization_config,
     )
 
     _qwen_processor = AutoProcessor.from_pretrained(
